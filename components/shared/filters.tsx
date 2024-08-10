@@ -70,8 +70,8 @@ export const Filters: React.FC<Props> = ({ className }) => {
         title='Ingredients'
         limit={5}
         items={[
-          { text: 'Троянди', value: '1' },
-          { text: 'Фіалки', value: '2' },
+          { text: 'Троянди', value: '10' },
+          { text: 'Фіалки', value: '11' },
           { text: 'Лілії', value: '3' },
           { text: 'Ландиші', value: '4' },
           { text: 'Мімози', value: '5' },
@@ -79,8 +79,8 @@ export const Filters: React.FC<Props> = ({ className }) => {
           { text: 'Ромашки', value: '7' },
         ]}
         defaultItems={[
-          { text: 'Троянди', value: '1' },
-          { text: 'Фіалки', value: '2' },
+          { text: 'Троянди', value: '10' },
+          { text: 'Фіалки', value: '11' },
           { text: 'Лілії', value: '3' },
           { text: 'Ландиші', value: '4' },
           { text: 'Мімози', value: '5' },
