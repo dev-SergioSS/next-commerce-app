@@ -1,4 +1,11 @@
-import { Container, Filters, Title, TopBar } from '@/components/shared'
+import {
+  Container,
+  Filters,
+  ProductCard,
+  ProductsGroupList,
+  Title,
+  TopBar,
+} from '@/components/shared'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 
@@ -22,7 +29,55 @@ export default function Home() {
             <Filters />
           </div>
           {/* products */}
-          <div className=''>list</div>
+
+          <div className='flex-1'>
+            <div className='flex flex-col gap-16'>
+              <ProductsGroupList
+                title={'Pizza'}
+                categoryId={1}
+                items={[
+                  {
+                    id: 0,
+                    name: 'Чізбургер-піцца',
+                    pric: 550,
+                    imageUrl:
+                      'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: 'Маргарита',
+                    pric: 500,
+                    imageUrl:
+                      'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
+                    items: [{ price: 500 }],
+                  },
+                ]}
+              />
+              <ProductsGroupList
+                title={'Morning pizza'}
+                categoryId={2}
+                items={[
+                  {
+                    id: 0,
+                    name: 'Чізбургер-піцца',
+                    pric: 550,
+                    imageUrl:
+                      'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 1,
+                    name: 'Маргарита',
+                    pric: 500,
+                    imageUrl:
+                      'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
+                    items: [{ price: 500 }],
+                  },
+                ]}
+              />
+            </div>
+          </div>
         </div>
       </Container>
     </>
