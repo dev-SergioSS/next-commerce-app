@@ -24,7 +24,8 @@ export const Categories: React.FC<Props> = ({ className }) => {
 
   return (
     <div
-      className={cn('inline-flex gap-1 bg-gray-50 p-1 rounded-2xl', className)}>
+      className={cn('inline-flex gap-1 bg-gray-50 p-1 rounded-2xl', className)}
+    >
       {cats.map(({ name, id }) => (
         <a
           key={id}
@@ -33,7 +34,8 @@ export const Categories: React.FC<Props> = ({ className }) => {
             categoryActiveId === id &&
               'bg-white shadow-md shadow-gray-200 text-primary'
           )}
-          href={`/#${name}`}>
+          href={`/#${name}`}
+        >
           <button>{name}</button>
         </a>
       ))}
