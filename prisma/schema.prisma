@@ -28,9 +28,8 @@ model User {
 }
 
 model Category {
-  id   Int    @id @default(autoincrement())
-  name String @unique
-
+  id       Int       @id @default(autoincrement())
+  name     String    @unique
   products Product[]
 
   createdAt DateTime @default(now())
@@ -38,9 +37,9 @@ model Category {
 }
 
 model Product {
-  id       Int     @id @default(autoincrement())
+  id       Int    @id @default(autoincrement())
   name     String
-  imageUrl String?
+  imageUrl String
 
   category   Category @relation(fields: [categoryId], references: [id])
   categoryId Int
@@ -55,12 +54,12 @@ model Product {
 model ProductItem {
   id Int @id @default(autoincrement())
 
-  prise     Int
+  price     Int
   size      Int?
   pizzaType Int?
 
   product   Product @relation(fields: [productId], references: [id])
-  productId Int     @unique
+  productId Int
 
   cartItems CartItem[]
 }
@@ -69,16 +68,20 @@ model Ingredient {
   id Int @id @default(autoincrement())
 
   name     String
-  prise    Int
+  price    Int
   imageUrl String
 
-  product   Product @relation(fields: [productId], references: [id])
-  productId Int     @unique
+  product   Product[]
+  cartItems CartItem[]
 
-  createdAt  DateTime  @default(now())
-  updatedAt  DateTime  @updatedAt
-  CartItem   CartItem? @relation(fields: [cartItemId], references: [id])
-  cartItemId Int?
+  // product   Product @relation(fields: [productId], references: [id])
+  // productId Int     @unique
+
+  // CartItem   CartItem? @relation(fields: [cartItemId], references: [id])
+  // cartItemId Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Cart {

@@ -35,7 +35,7 @@ export default function Home() {
                   {
                     id: 0,
                     name: 'Чізбургер-піцца',
-                    pric: 550,
+                    price: 550,
                     imageUrl:
                       'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
                     items: [{ price: 550 }],
@@ -43,7 +43,7 @@ export default function Home() {
                   {
                     id: 1,
                     name: 'Маргарита',
-                    pric: 500,
+                    np: 500,
                     imageUrl:
                       'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
                     items: [{ price: 500 }],
@@ -57,7 +57,7 @@ export default function Home() {
                   {
                     id: 0,
                     name: 'Чізбургер-піцца',
-                    pric: 550,
+                    price: 550,
                     imageUrl:
                       'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
                     items: [{ price: 550 }],
@@ -65,7 +65,7 @@ export default function Home() {
                   {
                     id: 1,
                     name: 'Маргарита',
-                    pric: 500,
+                    price: 500,
                     imageUrl:
                       'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
                     items: [{ price: 500 }],
@@ -79,7 +79,7 @@ export default function Home() {
                   {
                     id: 0,
                     name: 'Чізбургер-піцца',
-                    pric: 550,
+                    price: 550,
                     imageUrl:
                       'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
                     items: [{ price: 550 }],
@@ -87,7 +87,7 @@ export default function Home() {
                   {
                     id: 1,
                     name: 'Маргарита',
-                    pric: 500,
+                    price: 500,
                     imageUrl:
                       'https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg',
                     items: [{ price: 500 }],

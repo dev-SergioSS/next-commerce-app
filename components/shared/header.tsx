@@ -15,25 +15,18 @@ export const Header: React.FC<Props> = ({ className }) => {
       <Container className='flex items-center justify-between py-8'>
         {/* Left side */}
         <div className='flex items-center gap-4'>
-          <Image
-            src='/logo.png'
-            alt='logo'
-            width={35}
-            height={35}
-          />
+          <Image src='/logo.png' alt='logo' width={35} height={35} />
           <div>
             <h1 className='text-2xl uppercase font-black'>Next Pizza</h1>
             <p className='text-sm text-gray-400 leading-3'>
-              it doesn't get tastier
+              it doesn&apos;t get tastier
             </p>
           </div>
         </div>
 
         {/* Right side */}
         <div className='flex items-center gap-3'>
-          <Button
-            variant={'outline'}
-            className='flex items-center gap-2'>
+          <Button variant={'outline'} className='flex items-center gap-2'>
             <User size={16} />
             Sign In
           </Button>
@@ -43,11 +36,7 @@ export const Header: React.FC<Props> = ({ className }) => {
               <b>$24</b>
               <span className='h-full w-[1px] bg-white mx-3' />
               <div className='flex items-center gap-1 transition duration-300 group-hover:opacity-0'>
-                <ShoppingCart
-                  className='relative'
-                  strokeWidth={2}
-                  size={16}
-                />
+                <ShoppingCart className='relative' strokeWidth={2} size={16} />
                 <b>3</b>
               </div>
               <ArrowRight
