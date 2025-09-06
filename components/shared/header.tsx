@@ -4,6 +4,7 @@ import React from 'react'
 import { Container } from './container'
 import { Button } from '../ui'
 import { ArrowRight, ShoppingCart, User } from 'lucide-react'
+import { SearchInput } from './search-input'
 
 interface Props {
   className?: string
@@ -22,6 +23,10 @@ export const Header: React.FC<Props> = ({ className }) => {
               it doesn&apos;t get tastier
             </p>
           </div>
+        </div>
+
+        <div className='mx-10 flex-1 relative'>
+          <SearchInput />
         </div>
 
         {/* Right side */}

@@ -70,7 +70,7 @@ async function up() {
     data: {
       name: 'Пепперони фреш',
       imageUrl:
-        'https://media.dodostatic.net/image/r:233x233/11EE7D61304FAF5A98A6958F2BB2D260.webp',
+        'https://ru.freepik.com/free-psd/top-view-pizza-isolated_158235584.htm#fromView=keyword&page=1&position=3&uuid=4d449bc9-b379-41c3-b69e-755513f4fd86&query=Pizza+png',
       categoryId: 1,
       ingredients: {
         connect: _ingredients.slice(0, 5),
@@ -82,7 +82,7 @@ async function up() {
     data: {
       name: 'Сырная',
       imageUrl:
-        'https://media.dodostatic.net/image/r:233x233/11EE7D610CF7E265B7C72BE5AE757CA7.webp',
+        'https://ru.freepik.com/free-psd/top-view-pizza-isolated_158235584.htm#fromView=keyword&page=1&position=3&uuid=4d449bc9-b379-41c3-b69e-755513f4fd86&query=Pizza+png',
       categoryId: 1,
       ingredients: {
         connect: _ingredients.slice(5, 10),
@@ -94,7 +94,7 @@ async function up() {
     data: {
       name: 'Чоризо фреш',
       imageUrl:
-        'https://media.dodostatic.net/image/r:584x584/11EE7D61706D472F9A5D71EB94149304.webp',
+        'https://ru.freepik.com/free-psd/top-view-pizza-isolated_158235584.htm#fromView=keyword&page=1&position=3&uuid=4d449bc9-b379-41c3-b69e-755513f4fd86&query=Pizza+png',
       categoryId: 1,
       ingredients: {
         connect: _ingredients.slice(10, 40),

@@ -12,7 +12,7 @@
     "prisma:seed": "prisma db seed",
     "postinstall": "prisma generate"
   },
-	"prisma": {
+  "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "@radix-ui/react-slider": "^1.2.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@types/bcrypt": "^6.0.0",
+    "axios": "^1.11.0",
     "bcrypt": "^6.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
